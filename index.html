@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mrs. Bebida · 24-11</title>
+<meta name="description" content="Öğretmenler Günün kutlu olsun.">
+<meta name="theme-color" content="#0b1033">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<header id="hud" aria-hidden="true">
+  <div><span class="lbl">ÇİÇEK</span><span id="count">×00</span></div>
+  <div class="right"><span class="lbl">DÜNYA</span><span>24-11</span></div>
+</header>
+
+<main>
+  <section id="hero" class="msg">
+    <p class="presents">24 KASIM 2026</p>
+    <h1 class="logo"><span>MRS.</span><span>BEBIDA</span></h1>
+    <div class="icons" aria-hidden="true">
+      <canvas data-sprite="apple"></canvas>
+      <canvas data-sprite="book"></canvas>
+      <canvas data-sprite="pencil"></canvas>
+      <canvas data-sprite="board"></canvas>
+    </div>
+    <p class="sub">Öğretmenler Günü özel bölümü</p>
+    <p class="start blink">▶ BAŞLA</p>
+    <p class="scrollhint">başlamak için kaydır ▼</p>
+  </section>
+
+  <section id="talk" aria-live="polite">
+    <div class="face"><canvas id="face"></canvas></div>
+    <div class="bubble">
+      <p class="who" id="who"></p>
+      <p class="line"><span id="said"></span><span id="unsaid"></span></p>
+    </div>
+  </section>
+
+  <section id="final" class="msg">
+    <p class="tag">BÖLÜM TAMAMLANDI!</p>
+    <h2>İyi ki varsın<br class="nb"> <span class="name">ZEZI</span> <span class="heart">♥</span></h2>
+    <p class="wish">Öğretmenler Günün kutlu olsun</p>
+    <p class="from">from Leck, with love</p>
+  </section>
+</main>
+
+<canvas class="peek" id="peekL" data-sprite="kitty" aria-hidden="true"></canvas>
+<canvas class="peek" id="peekR" data-sprite="kuromi" aria-hidden="true"></canvas>
+<canvas class="peek" id="peekB" data-sprite="cinna" aria-hidden="true"></canvas>
+
+<div id="track"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
